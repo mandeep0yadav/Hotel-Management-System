@@ -1,4 +1,3 @@
-import org.gjt.mm.mysql.Driver;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,7 +13,7 @@ public class RegstrationPage {
     RegstrationPage(JFrame jf){
         JPanel jp = new JPanel();
         JButton b = new JButton("REGISTER");
-        JTextField editUserName = new JTextField();
+        JTextField editUserID = new JTextField();
         JPasswordField editPassword = new JPasswordField();
         JTextField editFirstName = new JTextField();
         JTextField editLastName = new JTextField();
@@ -26,7 +25,7 @@ public class RegstrationPage {
 
 
         JLabel registrationLabel = new JLabel("REGISTRATION PAGE");
-        JLabel USERNAME = new JLabel("Username");
+        JLabel USERID = new JLabel("UserID");
         JLabel PASSWORD = new JLabel("Password");
         JLabel FIRSTNAME = new JLabel("FirstName");
         JLabel LASTNAME = new JLabel("LastName");
@@ -64,8 +63,8 @@ public class RegstrationPage {
                 editGender.setText(gender);
             }
         });
-        USERNAME.setBounds(70, 180, 100, 10);
-        editUserName.setBounds(200, 180, 150, 20);
+        USERID.setBounds(70, 180, 100, 10);
+        editUserID.setBounds(200, 180, 150, 20);
         PASSWORD.setBounds(70, 210, 100, 10);
         editPassword.setBounds(200, 210, 150, 20);
         confirmpassword.setBounds(70, 240, 150, 10);
@@ -79,8 +78,8 @@ public class RegstrationPage {
         signIn.setForeground(Color.BLUE);
 
         jp.add(registrationLabel);
-        jp.add(USERNAME);
-        jp.add(editUserName);
+        jp.add(USERID);
+        jp.add(editUserID);
         jp.add(PASSWORD);
         jp.add(editPassword);
         jp.add(FIRSTNAME);
@@ -99,8 +98,10 @@ public class RegstrationPage {
 
 
         jp.add(b);
+
+        jf.setTitle("Register New User");
         jf.add(jp);
-        jf.setSize(400, 400);
+        jf.setSize(400, 500);
         jp.setLayout(null);
         jf.setVisible(true);
         jf.setResizable(false);
@@ -110,7 +111,7 @@ public class RegstrationPage {
                 if (editFirstName.getText().toString().trim().length() > 0 &&
                         editLastName.getText().toString().trim().length() > 0 &&
                         editContactNo.getText().toString().trim().length() > 0 &&
-                        editUserName.getText().toString().trim().length() > 0 &&
+                        editUserID.getText().toString().trim().length() > 0 &&
                         String.valueOf(editPassword.getPassword()).toString().trim().length() > 0 &&
                         String.valueOf(editConfirmPassword.getPassword()).toString().trim().length() > 0
 
@@ -126,20 +127,20 @@ public class RegstrationPage {
                             stmt.setString(2, editLastName.getText());
                             stmt.setLong(3, Long.parseLong(editContactNo.getText()));
                             stmt.setString(4, editGender.getText());
-                            stmt.setString(5, editUserName.getText());
+                            stmt.setString(5, editUserID.getText());
                             stmt.setString(6, String.valueOf(editPassword.getPassword()));
                             stmt.execute();
 
-
-                            System.out.println("success");
+                            clearAllFields();
                             JOptionPane.showMessageDialog(jp, "registration is completed", "SUCCESS", JOptionPane.PLAIN_MESSAGE);
                         } catch (Exception e) {
+                            e.printStackTrace();
 
                         }
                     } else {
                         {
-                            JOptionPane.showMessageDialog(jp, "Your password is not matched. Please re-enter your Password", "ERROR", JOptionPane.WARNING_MESSAGE);
-                            editPassword.setText("");
+                           alertLabel.setText("Your password is not matched. Please re-enter your Password");
+                           editPassword.setText("");
 
                             editConfirmPassword.setText("");
                             editPassword.requestFocus();
@@ -147,8 +148,8 @@ public class RegstrationPage {
                     }
                 } else {
                     if (editFirstName.getText().toString().trim().length() == 0) {
-                       alertLabel.setText("Please enter your Firstname");
-                       editFirstName.requestFocus();
+                        alertLabel.setText("Please enter your Firstname");
+                        editFirstName.requestFocus();
 
                     } else if (editLastName.getText().toString().trim().length() == 0) {
                         alertLabel.setText("Please enter your Lastname");
@@ -158,13 +159,13 @@ public class RegstrationPage {
                         alertLabel.setText("Please enter your Contactno");
                         editContactNo.requestFocus();
 
-                    } else if (editUserName.getText().toString().trim().length() == 0) {
+                    } else if (editUserID.getText().toString().trim().length() == 0) {
                         alertLabel.setText("Please choose a unique username");
-                        editUserName.requestFocus();
+                        editUserID.requestFocus();
 
                     } else if (String.valueOf(editPassword.getPassword()).toString().trim().length() == 0) {
-                      alertLabel.setText("Please enter your Firstname");
-                      editPassword.requestFocus();
+                        alertLabel.setText("Please enter your password");
+                        editPassword.requestFocus();
 
                     } else if (String.valueOf(editConfirmPassword.getPassword()).toString().trim().length() == 0) {
                         alertLabel.setText("Please enter your password two times");
@@ -173,6 +174,16 @@ public class RegstrationPage {
                     }
 
                 }
+            }
+
+            private void clearAllFields() {
+                editConfirmPassword.setText("");
+                editContactNo.setText("");
+                editFirstName.setText("");
+                editLastName.setText("");
+                editPassword.setText("");
+                editUserID.setText("");
+                alertLabel.setText("");
             }
         });
         signIn.addMouseListener(new MouseAdapter() {
@@ -185,11 +196,11 @@ public class RegstrationPage {
             public void mouseClicked(MouseEvent e) {
                 jp.setVisible(false);
                 new LogInPage(jf);
-                       // logInPage.setVisible(true);
+                // logInPage.setVisible(true);
 
 
 
-              //  System.out.println("sign in page");
+                //  System.out.println("sign in page");
                 //launch sign in form
             }
         });

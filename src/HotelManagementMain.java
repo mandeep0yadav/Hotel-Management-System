@@ -6,6 +6,6 @@ import javax.swing.*;
 public class HotelManagementMain {
     public static void main(String[] args) {
         JFrame jFrame=new JFrame("mainFrame");
-        new RegstrationPage(jFrame);
+        new LogInPage(jFrame);
     }
 }
