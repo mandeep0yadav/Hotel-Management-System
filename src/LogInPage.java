@@ -46,7 +46,6 @@ public class LogInPage {
 
         jFrame.setTitle("Login in to your account");
         jFrame.add(jPanel);
-        jFrame.setSize(400, 500);
         jPanel.setLayout(null);
         jFrame.setVisible(true);
         jFrame.setResizable(false);
