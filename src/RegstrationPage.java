@@ -101,7 +101,7 @@ public class RegstrationPage {
 
         jf.setTitle("Register New User");
         jf.add(jp);
-        jf.setSize(400, 500);
+        jf.setSize(500, 500);
         jp.setLayout(null);
         jf.setVisible(true);
         jf.setResizable(false);

@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 /**
  * Created by jatin kumar vimal on 30/06/2017.
@@ -10,7 +11,7 @@ public class HomePage {
     JPanel panelHome;
     JButton loginbutton,Exitbutton,registrationButton;
     JLabel Homelabel;
-    public HomePage(JFrame jFrame ){
+    public HomePage(JFrame jFrame ) throws IOException {
         jFrame.setDefaultCloseOperation(jFrame.EXIT_ON_CLOSE);
         jFrame.setTitle("Home Page");
 
@@ -25,25 +26,36 @@ public class HomePage {
         registrationButton.setBounds(180,240,150,25);
         panelHome= new JPanel();
         jFrame.add(panelHome);
+
       //  panelHome.setBackground(Color.blue);
-        panelHome.setBackground(Color.black);
+//        panelHome.setBackground(Color.black);
         panelHome.setLayout(null);
         panelHome.add(Homelabel);
         panelHome.add(loginbutton);
         panelHome.add(Exitbutton);
         panelHome.add(registrationButton);
+        panelHome.requestFocus();
        loginbutton.addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent e) {
-               //jFrame.dispose();
                panelHome.setVisible(false);
-
                new LogInPage(jFrame);
-
-
            }
        });
-
+        registrationButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelHome.setVisible(false);
+                new RegstrationPage(jFrame);
+            }
+        });
+        Exitbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jFrame.dispose();
+            }
+        });
+        jFrame.setContentPane(new JLabel((new ImageIcon("src\\MainPackage\\images\\holla1.jpg"))));
         jFrame.setSize(500,500);
         jFrame.setVisible(true);
         jFrame.setResizable(false);

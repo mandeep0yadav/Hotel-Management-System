@@ -1,3 +1,4 @@
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -33,7 +34,7 @@ public class SelectRoom {
 
         jFrame.setTitle("Select Room Type");
         jFrame.add(jPanel);
-        jFrame.setSize(400, 400);
+        jFrame.setSize(500, 500);
         jPanel.setLayout(null);
         jFrame.setVisible(true);
         jFrame.setResizable(false);
