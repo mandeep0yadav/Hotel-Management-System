@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2791a4be-88cc-43b8-b09b-e73216d911b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/123.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/new1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/new2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/slide-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/slide-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/slide-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OwnerLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HotelManagement/HotelManagementMain.class" afterPath="$PROJECT_DIR$/out/production/HotelManagement/HotelManagementMain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainPackage/images/ssss.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HomePage.java" afterPath="$PROJECT_DIR$/src/HomePage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HotelManagementMain.java" afterPath="$PROJECT_DIR$/src/HotelManagementMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OwnerLogin.java" afterPath="$PROJECT_DIR$/src/OwnerLogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RoomBookingDetail.java" afterPath="$PROJECT_DIR$/src/RoomBookingDetail.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,21 +23,11 @@
       <file leaf-file-name="HotelManagementMain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HotelManagementMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="170">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegstrationPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RegstrationPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -59,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OwnerLogin.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OwnerLogin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/OwnerLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,18 +59,18 @@
       <file leaf-file-name="SelectRoom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SelectRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
+            <state relative-caret-position="321">
               <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,8 +81,8 @@
       <file leaf-file-name="RoomBookingDetail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RoomBookingDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="39" />
+            <state relative-caret-position="168">
+              <caret line="132" column="16" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -154,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/RegstrationPage.java" />
         <option value="$PROJECT_DIR$/src/SelectRoom.java" />
         <option value="$PROJECT_DIR$/src/RoomBookingDetail.java" />
-        <option value="$PROJECT_DIR$/src/OwnerLogin.java" />
         <option value="$PROJECT_DIR$/src/HomePage.java" />
         <option value="$PROJECT_DIR$/src/HotelManagementMain.java" />
+        <option value="$PROJECT_DIR$/src/OwnerLogin.java" />
       </list>
     </option>
   </component>
@@ -661,12 +646,12 @@
       <workItem from="1499069259686" duration="2674000" />
       <workItem from="1499098609676" duration="1499000" />
       <workItem from="1499138864674" duration="2837000" />
-      <workItem from="1499146967631" duration="38000" />
+      <workItem from="1499146967631" duration="2054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72317000" />
+    <option name="totallyTimeSpent" value="74333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="1" />
@@ -720,14 +705,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/RegstrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HotelManagementMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -962,37 +939,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RoomBookingDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="48" column="39" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SelectRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HotelManagementMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RegstrationPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainPackage/images/ssss.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HotelManagementMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,20 +972,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/OwnerLogin.java">
+    <entry file="file://$PROJECT_DIR$/src/RoomBookingDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        <state relative-caret-position="168">
+          <caret line="132" column="16" lean-forward="false" selection-start-line="132" selection-start-column="16" selection-end-line="132" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SelectRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/OwnerLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

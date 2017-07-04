@@ -49,8 +49,20 @@ public class OwnerLogin {
         nextbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                AdminPanel.setVisible(false);
-                new SelectRoom(jFrame);
+
+                if(StaffOption.getSelectedItem().toString().trim().equals("Select....") || (StaffOption.
+                        getSelectedItem().toString().trim().equals(null))||(StaffOption.getSelectedItem().toString().trim()
+                .equals("Others"))){
+                    JOptionPane.showMessageDialog(jFrame,"You Have Not Select Anything,Select Option And Try Again");
+                }
+                else if(StaffOption.getSelectedItem().toString().trim().equals("Manager")){
+                    AdminPanel.setVisible(false);
+                    new RegstrationPage(jFrame);
+                }
+                else if(StaffOption.getSelectedItem().toString().trim().equals("Employee")){
+                    AdminPanel.setVisible(false);
+                    new SelectRoom(jFrame);
+                }
             }
         });
 

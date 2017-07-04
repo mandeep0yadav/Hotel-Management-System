@@ -26,8 +26,8 @@ public class RoomBookingDetail{
 
     RoomBookingDetail( JFrame jFrame) {
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setSize(1000, 1000);
-        jFrame.setResizable(false);
+        jFrame.setSize(1200, 680);
+        jFrame.setResizable(true);
 
         header = new JLabel("SIGN UP PAGE");
         cust_id = new JLabel("Customer-ID");

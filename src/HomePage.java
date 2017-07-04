@@ -1,6 +1,8 @@
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 
 /**
@@ -119,6 +121,15 @@ public class HomePage {
         panelMiddle.add(Hotellabel);
         panelMiddle.add(loginbutton);
 
+        loginbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+              //  panelMiddle.setVisible(false);
+                new RoomBookingDetail(jFrame);
+
+            }
+        });
         //jFrame.add(panelHome);
         jFrame.add(panelMiddle);
         jFrame.setSize(1200, 680);
