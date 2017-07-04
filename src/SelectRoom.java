@@ -8,38 +8,50 @@ import java.awt.event.MouseEvent;
  * Created by nirmit on 29/6/17.
  */
 public class SelectRoom {
+    JPanel panelselect;
+    JLabel selectRoom;
+    JButton buttonluxury,buttonsemi,buttonnormal;
+    public SelectRoom( JFrame jFrame) {
+//        JFrame jFrame= new JFrame("demo");
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //jFrame.setContentPane(new JLabel((new ImageIcon("src\\Background\\123.jpg"))));
 
-    SelectRoom(JFrame jFrame){
-        JLabel selectRoom = new JLabel("Select  Room");
-        selectRoom.setBounds(40, 40, 180, 10);
-        selectRoom.setHorizontalAlignment(SwingConstants.CENTER);
-        selectRoom.setForeground(Color.BLUE);
-        selectRoom.setSize(300, 10);
+        panelselect = new JPanel();
+        buttonluxury= new JButton("LUXURY");
+        buttonsemi= new JButton("SEMI LUXURY");
+        buttonnormal= new JButton("NORMAL");
+        selectRoom = new JLabel("Select Room Type");
 
-        JPanel jPanel = new JPanel();
-        JButton luxuryRoom = new JButton("Luxury Room");
-        luxuryRoom.setBounds(150, 100, 120, 30);
-        jPanel.add(luxuryRoom);
+        buttonsemi.setForeground(Color.white);
+        buttonnormal.setForeground(Color.white);
+        buttonluxury.setForeground(Color.white);
+        selectRoom.setForeground(Color.WHITE);
 
-        jPanel.add(selectRoom);
+        selectRoom.setFont(new Font("Times New Roman",Font.BOLD,50));
 
-        JButton semiRoom = new JButton("Semi Luxury Room");
-        semiRoom.setBounds(150, 150, 120, 30);
-        jPanel.add(semiRoom);
+        buttonluxury.setBounds(500, 300, 180, 30);
+        buttonsemi.setBounds(500, 350, 180, 30);
+        buttonnormal.setBounds(500, 400, 180, 30);
+        selectRoom.setBounds(400,200,400,55);
 
-        JButton normalRoom = new JButton("Normal Room");
-        normalRoom.setBounds(150, 200, 120, 30);
-        jPanel.add(normalRoom);
+        buttonluxury.setBackground(Color.BLUE);
+        buttonsemi.setBackground(Color.RED);
+        buttonnormal.setBackground(Color.BLACK);
 
+        panelselect.setSize(1200,680);
+        panelselect.setOpaque(false);
+        panelselect.setLayout(null);
+        jFrame.add(panelselect);
+        panelselect.add(buttonluxury);
+        panelselect.add(buttonsemi);
+        panelselect.add(buttonnormal);
+        panelselect.add(selectRoom);
 
-        jFrame.setTitle("Select Room Type");
-        jFrame.add(jPanel);
-        jFrame.setSize(500, 500);
-        jPanel.setLayout(null);
+        jFrame.setSize(1200,680);
         jFrame.setVisible(true);
-        jFrame.setResizable(false);
 
-        luxuryRoom.addMouseListener(new MouseAdapter() {
+
+        buttonluxury.addMouseListener(new MouseAdapter() {
             /**
              * {@inheritDoc}
              *
@@ -47,19 +59,14 @@ public class SelectRoom {
              */
             @Override
             public void mouseClicked(MouseEvent e) {
-                jPanel.setVisible(false);
+                panelselect.setVisible(false);
                 new RoomBookingDetail(jFrame);
-                // logInPage.setVisible(true);
 
-
-
-                //  System.out.println("sign in page");
-                //launch sign in form
             }
         });
 
 
-        semiRoom.addMouseListener(new MouseAdapter() {
+        buttonsemi.addMouseListener(new MouseAdapter() {
             /**
              * {@inheritDoc}
              *
@@ -67,18 +74,12 @@ public class SelectRoom {
              */
             @Override
             public void mouseClicked(MouseEvent e) {
-                jPanel.setVisible(false);
+                panelselect.setVisible(false);
                 new RoomBookingDetail(jFrame);
-                // logInPage.setVisible(true);
-
-
-
-                //  System.out.println("sign in page");
-                //launch sign in form
             }
         });
 
-        normalRoom.addMouseListener(new MouseAdapter() {
+        buttonnormal.addMouseListener(new MouseAdapter() {
             /**
              * {@inheritDoc}
              *
@@ -86,17 +87,10 @@ public class SelectRoom {
              */
             @Override
             public void mouseClicked(MouseEvent e) {
-                jPanel.setVisible(false);
+                panelselect.setVisible(false);
                 new RoomBookingDetail(jFrame);
-                // logInPage.setVisible(true);
-
-
-
-                //  System.out.println("sign in page");
-                //launch sign in form
             }
         });
 
     }
-
 }

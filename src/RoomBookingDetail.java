@@ -32,7 +32,7 @@ public class RoomBookingDetail{
         cust_id= new JLabel("Customer ID");
         cust_name = new JLabel("Customer Name");
         cust_city= new JLabel("Customer City");
-        cust_add= new JLabel("Customer City");
+        cust_add= new JLabel("Customer Address");
         header= new JLabel("ROOM BOOKING FORM");
         noPerson= new JLabel("NO. Of Person");
         mob_no= new JLabel("Mobile No.");
@@ -143,11 +143,17 @@ public class RoomBookingDetail{
         jFrame.setVisible(true);
 
 
-        exit_button.addActionListener(new ActionListener() {
+        checkIn_button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 jPanel.setVisible(false);
                 new SelectRoom(jFrame);
+            }
+        });
+        exit_button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                jFrame.dispose();
             }
         });
 
