@@ -125,7 +125,7 @@ public class HomePage {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-              //  panelMiddle.setVisible(false);
+               panelMiddle.setVisible(false);
                 new RoomBookingDetail(jFrame);
 
             }

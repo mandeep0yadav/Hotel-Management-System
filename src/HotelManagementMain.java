@@ -8,6 +8,6 @@ public class HotelManagementMain {
     public static void main(String[] args) throws IOException {
         JFrame jFrame=new JFrame("MainFrame");
        // new HomePage(jFrame);
-        new OwnerLogin(jFrame);
+        new HomePage(jFrame);
     }
 }
